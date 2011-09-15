@@ -54,7 +54,6 @@ module MacoRb
           Dir.expects(:[]).with(*@paths_to_dir).returns(@usb_dirs)
           Device.all.size.must_be :==, @usb_dirs.size
         end
-        
       end
     end
   end
